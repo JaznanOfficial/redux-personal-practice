@@ -1,15 +1,15 @@
 import "./App.css";
-import Counter from "./Components/Counter";
 import { Provider } from "react-redux";
-import store from './Redux/store';
+import store from "./Redux/store";
+import DynamicHooksCounter from "./Components/DynamicHooksCounter";
+import HooksCounter from "./Components/HooksCounter";
 
 function App() {
     return (
         <Provider store={store}>
             <div className="App">
-                <Counter />
-                <Counter />
-                <Counter />
+                <HooksCounter/>
+                <DynamicHooksCounter />
             </div>
         </Provider>
     );
